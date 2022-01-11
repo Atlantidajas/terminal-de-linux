@@ -6,7 +6,7 @@
 
 Por su parte, **Bat** (que se define como _cat con alas_) suple a _cat_ en todas sus funciones, añadiendo otras útiles como son el resaltado automático de sintaxis para un amplio número de lenguajes de programación y marcado, la integración con Git (destacando las modificaciones), la paginación automática o la opción de mostrar caracteres no imprimibles.
 
-Página principal: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat) 
+* Página principal: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat) 
 
 ![bat01][bat01]
 
