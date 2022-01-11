@@ -90,7 +90,7 @@ Lista los archivos en forma de árbol (salida similar al comando _tree_):
 exa -T
 ```
 
-## Find vs. Fd
+## Fd vs. Find
 
 TODO
 
