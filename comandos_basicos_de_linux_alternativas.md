@@ -6,10 +6,9 @@
 
 Por su parte, **Bat** (que se define como _cat con alas_) suple a _cat_ en todas sus funciones, añadiendo otras útiles como son el resaltado automático de sintaxis para un amplio número de lenguajes de programación y marcado, la integración con Git (destacando las modificaciones), la paginación automática o la opción de mostrar caracteres no imprimibles.
 
-* Página principal del proyecto: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat) 
+* Página Oficial: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat) 
 
 ![bat01][bat01]
-
 
 Instalar _Bat_ en Debian/Ubuntu/Linux Mint desde el repositorio:
 
@@ -30,13 +29,21 @@ batcat index.html
 
 ## Exa vs. Ls
 
-**Exa** es una herramienta construida en el lenguaje de programación _Rust_ y es una alternativa al comando **cd** (CHange directory, cambiar de directorio). Tiene un aspecto más colorido, algo que nos ayuda a diferenciar la información y tipos de archivos. También resalta aspectos como las propiedades, el tamaño, la fecha de modificación, usuario, grupo o inodos.
+**Exa** es una herramienta construida en el lenguaje de programación _Rust_ y es una alternativa al comando **Cd** (_CHange directory_, cambiar de directorio). Tiene un aspecto más colorido, algo que nos ayuda a diferenciar la información y tipos de archivos. También resalta aspectos como las propiedades, el tamaño, la fecha de modificación, usuario, grupo o inodos.
 
-* Página principal del proyecto: [https://github.com/ogham/exa](https://github.com/ogham/exa) 
+* Página Oficial: [https://github.com/ogham/exa](https://github.com/ogham/exa) 
 
 ![exa01][exa01]
 
-Instalar Exa en Debian/Ubuntu/Linux Mint desde código fuente:
+Instalar _Exa_ en Debian/Ubuntu/Linux Mint desde el repositorio:
+
+```bash
+sudo apt install exa -y
+```
+
+**Nota**: en algunas distribuciones Linux el paquete _Exa_ no se encuentra disponible, por lo que no nos quedará más remedio que instalarlo a partir del código fuente.
+
+Instalar _Exa_ en Debian/Ubuntu/Linux Mint desde código fuente:
 
 ```bash
 # Instalar Rust
@@ -86,7 +93,6 @@ exa -T
 ## Find vs. Fd
 
 TODO
-
 
 
 [bat01]: ./img/bat01.png "Bat - Alternativa al comando Cat"
