@@ -92,9 +92,11 @@ exa -T
 
 ## Fd vs. Find
 
-TODO
+**Fd** es una herramienta construida en el lenguaje de programación _Rust_ y es una alternativa simple, rápida y fácil de usar al comando de búsqueda de Linux _Find_. Tiene la particularidad de colorear la salida del terminal y puede ignorar directorios y archivos ocultos. También admite el uso de expresiones regulares.
 
 * Página Oficial: [https://github.com/sharkdp/fd](https://github.com/sharkdp/fd)
+
+![fd01][fd01]
 
 Instalar _Fd_ en Debian/Ubuntu/Linux Mint desde repositorio:
 
@@ -105,13 +107,45 @@ wget https://github.com/sharkdp/fd/releases/download/v8.3.1/fd-musl_8.3.1_amd64.
 sudo apt install ./fd-musl_8.3.1_amd64.deb
 ```
 
-Buscar el fichero index.html:
+Instalar _Fd_ en Debian/Ubuntu/Linux Mint desde código fuente:
+
+**Nota**: Si ya tenemos instalado _Rust_ podemos obviar el paso '# Instalar Rust'.
+
+```bash
+# Instalar Rust
+sudo apt-get install libgit2-dev cmake -y
+curl https://sh.rustup.rs –sSf | sh
+source $HOME/.cargo/env
+
+# Descargar código fuente de exa
+sudo apt install git -y
+cd /tmp
+git clone https://github.com/sharkdp/fd
+cd fd
+
+# Crea el ejecutable a partir del código fuente
+cargo build
+cargo test
+
+# Copiar el ejecutable a una carpeta del sistema
+cd target/debug
+sudo cp fd /usr/local/bin/
+```
+
+
+Buscar el fichero index.html en el directorio actual:
 
 ```bash
 fd index.html
 ```
 
-Buscar el fichero index.html mostrando permisos, propietario, tamaño y fecha de modificación:
+Buscar el fichero _index.html_ en el directorio _/home/alumno_:
+
+```bash
+fd index.html /home/alumno
+```
+
+Buscar el fichero _index.html_ mostrando permisos, propietario, tamaño y fecha de modificación:
 
 ```bash
 fd -X ls -lhd --color=always index.html
@@ -119,3 +153,4 @@ fd -X ls -lhd --color=always index.html
 
 [bat01]: ./img/bat01.png "Bat - Alternativa al comando Cat"
 [exa01]: ./img/exa01.png "Exa - Alternativa al comando Ls"
+[fd01]: ./img/fd01.png "Fd - Alternativa al comando Find"
