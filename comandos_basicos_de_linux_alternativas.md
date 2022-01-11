@@ -10,7 +10,7 @@ Por su parte, **Bat** (que se define como _cat con alas_) suple a _cat_ en todas
 
 ![bat01][bat01]
 
-Instalar _Bat_ en Debian/Ubuntu/Linux Mint desde el repositorio:
+Instalar _Bat_ en Debian/Ubuntu/Linux Mint desde repositorio:
 
 ```bash
 sudo apt install bat
@@ -35,7 +35,7 @@ batcat index.html
 
 ![exa01][exa01]
 
-Instalar _Exa_ en Debian/Ubuntu/Linux Mint desde el repositorio:
+Instalar _Exa_ en Debian/Ubuntu/Linux Mint desde repositorio:
 
 ```bash
 sudo apt install exa -y
@@ -94,6 +94,28 @@ exa -T
 
 TODO
 
+* Página Oficial: [https://github.com/sharkdp/fd](https://github.com/sharkdp/fd)
+
+Instalar _Fd_ en Debian/Ubuntu/Linux Mint desde repositorio:
+
+```bash
+cd /tmp
+wget https://github.com/sharkdp/fd/releases/download/v8.3.1/fd-musl_8.3.1_amd64.deb
+
+sudo apt install ./fd-musl_8.3.1_amd64.deb
+```
+
+Buscar el fichero index.html:
+
+```bash
+fd index.html
+```
+
+Buscar el fichero index.html mostrando permisos, propietario, tamaño y fecha de modificación:
+
+```bash
+fd -X ls -lhd --color=always index.html
+```
 
 [bat01]: ./img/bat01.png "Bat - Alternativa al comando Cat"
 [exa01]: ./img/exa01.png "Exa - Alternativa al comando Ls"
