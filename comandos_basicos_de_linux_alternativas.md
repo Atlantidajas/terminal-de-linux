@@ -23,7 +23,7 @@ batcat index.html
 
 Posiblemente el comando más usado a la hora de trabajar con la terminal, **cd** (siglas en inglés de "cambiar de directorio") hace exactamente eso, permitirnos ir cambiando de directorio (carpeta) para ejecutar los comandos pertinentes en cada uno.
 
-![exa_01][exa01]
+![exa_01][exa_01]
 
 
 Instalar Exa:
