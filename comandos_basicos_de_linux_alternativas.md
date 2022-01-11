@@ -29,18 +29,23 @@ Posiblemente el comando más usado a la hora de trabajar con la terminal, **cd**
 Instalar Exa:
 
 ```bash
+# Instalar Rust
 sudo apt-get install libgit2-dev cmake -y
 curl https://sh.rustup.rs –sSf | sh
 source $HOME/.cargo/env
 
+# Descargar código fuente de exa
 sudo apt install git -y
+cd /tmp
 git clone https://github.com/ogham/exa.git
 cd exa
 
+# Crea el ejecutable a partir del código fuente
 cargo build
 cargo test
-cd target/debug
 
+# Copiar el ejecutable a una carpeta del sistema
+cd target/debug
 sudo cp exa /usr/local/bin/
 ```
 
